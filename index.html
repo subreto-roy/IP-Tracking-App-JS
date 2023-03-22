@@ -20,8 +20,15 @@
     <div id="main" class="card card-body">
       <h2 class="title">Enter API</h2>
       <form id="addForm" class="form-inline mb-3">
-        <input type="text" class="form-control mr-2" id="item">
-        <input type="submit" class="btn btn-dark" value="Submit">
+        <div class="d-flex">
+          <input type="text" class="form-control mx-2" id="item">
+
+          <input type="submit" class="btn btn-dark mx-2" value="Submit">
+          
+          <input type="reset" class="btn btn-dark mx-2" id="clear" value="Clear">
+
+        </div>
+        
       </form>
       <div id="apiDetails"></div>
     </div>
