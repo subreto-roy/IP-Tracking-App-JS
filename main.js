@@ -4,7 +4,7 @@ document.getElementById('addForm').addEventListener('submit', function(e) {
   var ip = document.getElementById('item').value;
 
   if(/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/.test(ip)){
-        axios.get('http://ip-api.com/json/' + ip)
+        axios.get('https://api.ipgeolocation.io/ipgeo?apiKey=fd4948d6e3b84208ab3b3e038966ca70&ip=' + ip)
         .then(function (response) {
             var details = response.data;
             console.log(response);
