@@ -10,7 +10,7 @@ document.getElementById('addForm').addEventListener('submit', function(e) {
             var details = response.data;
             // console.log(response);
         
-              document.getElementById('apiDetails').innerHTML = '<p>City: ' + details.city + '</p><p>Country: ' + details.country_name + '</p><p>ISP: ' + details.isp + '</p><p>Latitude: ' + details.latitude + '</p><p>Longitude: ' + details.longitude + '</p><p>Continent_name: '+ details.continent_name +'</p><p>District: '+details.district+'</p><p>Zip Code: ' + details.zipcode +'</p><p>Calling code : ' + details.calling_code +'</p><p>time : ' + details.time_zone.current_time +'</p> ';
+              document.getElementById('apiDetails').innerHTML = '<p>City: ' + details.city + '</p><p>Country: ' + details.country_name + '</p><p>ISP: ' + details.isp + '</p><p>Latitude: ' + details.latitude + '</p><p>Longitude: ' + details.longitude + '</p><p>Continent_name: '+ details.continent_name +'</p><p>District: '+details.district+'</p><p>Zip Code: ' + details.zipcode +'</p><p>Calling code : ' + details.calling_code +'</p><p>Time : ' + details.time_zone.current_time +'</p> ';
 
               document.getElementById('item').value = ''
             //   document.getElementById('addForm').reset();
